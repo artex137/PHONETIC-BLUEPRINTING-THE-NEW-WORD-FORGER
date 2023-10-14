@@ -1,38 +1,33 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+header, nav, #about, #gallery, footer {
+    padding: 20px;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 16px;
-    padding: 16px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
 }
 
 .image-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.image-card img {
-    max-width: 100%;
-    height: auto;
+.image-card:hover {
+    transform: scale(1.05);
 }
 
-figcaption {
-    background-color: #333;
-    color: #fff;
-    padding: 8px;
+footer {
+    background-color: #f0f0f0;
 }
